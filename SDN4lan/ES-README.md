@@ -21,7 +21,7 @@ La topología es la siguiente:
 
 ## Interfaces de red 
 
-El router tendrá siempre la ip x.10.10.1/24. 
+El router tendrá siempre la ip X.10.10.1.  (LAN1 10.10.10.1)
 
 Las interfaces del router son  ALANX donde x es el número de la LAN al a que pertenece la interfaz 
 
