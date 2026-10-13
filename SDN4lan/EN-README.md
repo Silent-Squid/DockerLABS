@@ -68,7 +68,8 @@ This is the only step that you can skip if you already have the image created
 4. Redo the steps 2 and 3 the amount of times you want to run the lab
 
 **`CAUTION`** the docker image is not deleted with `KILL.sh`
-6. 
+
+Congrats!! You deploy the lab
 
 
 
