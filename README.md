@@ -1,5 +1,5 @@
 # About
-This is a repo for storing and sharing my SDN, openVswitch topologys and laboratories 
+This is a repo for storing and sharing my SDN, openVswitch topologies and laboratories 
 
 Every Lab have a Spanish and Hand-Made traslation to english documentation. 
 
