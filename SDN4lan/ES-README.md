@@ -15,6 +15,7 @@ La topología es la siguiente:
 - LAN1 y LAN3 tendrán conectividad
 - LAN2 y LAN4 tendrán conectividad
 - LAN1 y LAN4 tendrán internet
+- Ningún cliente podrá tener conexión directa con el router, no ping, no ssh, nada
 
 ## **LEYENDA**:
 
@@ -76,6 +77,3 @@ El paso nº 1 se deberá hacer solo si se modifica el dockerfile o no tienes o s
 
 
 
-Los dispositivos del mismo color tendrán conexión entre ellos, los oscuros también tendrán acceso a internet vía alpine-router
-
-Ningún cliente podrá tener conexión con el router, no ping, no ssh, nada
