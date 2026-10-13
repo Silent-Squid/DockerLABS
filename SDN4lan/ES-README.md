@@ -33,7 +33,7 @@ Una cosa que quería comentar es, por qué el script de iptables no se encuentra
 Otra cosa que puede ser controvertida es, ser tan específico en las reglas de iptables. La razón es la prevención de vulnerabilidades mediante la red. Si se es muy específico, aunque se conecte un dispositivo a la LAN3 y utilice la ip de la LAN2 no puedan tener conexión ni de lejos, al especificar las interfaces de entrada y salida. Es más trabajo, pero ¿cuanto se gana en seguridad? La respuesta es: Bastante. 
 
 
-Un ejemplo:
+Un ejemplo de la regla:
 
 ```
 iptables -A FORWARD -s 10.10.10.0/24 -i ALAN1 -o ALAN3 -d 30.10.10.0/24 -j ACCEPT
