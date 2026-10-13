@@ -4,6 +4,8 @@ El objetivo es aprender y practicar el firewal de iptables junto a SDN y docker 
 
 La utilización de openVswitch es simplemente para tener un control más preciso de la red y, en un futuro, crear topologías de red más realistas mediante el uso de Vlanes, Bonds, QoS, Mirrors e incluso switches de L3
 
+<br>
+
 # Topología 
 
 La topología es la siguiente:
@@ -25,6 +27,7 @@ El router tendrá siempre la ip X.10.10.1.  (LAN1 10.10.10.1)
 
 Las interfaces del router son  ALANX donde x es el número de la LAN al a que pertenece la interfaz 
 
+<br>
 
 # IPTABLES
 
