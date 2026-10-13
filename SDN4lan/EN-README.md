@@ -21,3 +21,9 @@ The use of openVswitch it is simply to have a precise control of the network and
 The router IP will always be X.10.10.1 where x is the LAN number (LAN1 10.10.10.1)
 
 The router interfaces names will be ALANX where x is the LAN number
+
+# IPTABLES
+
+Some importants details of my iptables desitions I must speak about are: 
+
+Why the iptables's script is not inside the container. The reason, docker behaves inconsistently  with iptables scripts and network scripts. Watching this behaving, I decided to 
