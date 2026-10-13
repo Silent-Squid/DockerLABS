@@ -61,15 +61,14 @@ You always can modify the scripts if you don't comply with the requisites.
 
 ## Execution Order
 
-1. Run the image creation script fo `alpine-router` (`DockerFile.dir/DockerBuild.sh`)
-This is the only step that you can skip if you already have the image created
-2. Run the deploy script (`SDN.sh`)
-3. For deleting everithing you must run (`KILL.sh`)
-4. Redo the steps 2 and 3 the amount of times you want to run the lab
+1. Run the image creation script for `alpine-router` (`DockerFile.dir/DockerBuild.sh`). This is the only step you can skip if you already have the image created.
+2. Run the deploy script (`SDN.sh`).
+3. To delete everything, run (`KILL.sh`).
+4. Repeat steps 2 and 3 as many times as you want to run the lab.
 
-**`CAUTION`** the docker image is not deleted with `KILL.sh`
+**`CAUTION`**: the Docker image is not deleted with `KILL.sh`.
 
-Congrats!! You deploy the lab
+Congratulations! You have deployed the lab.
 
 
 
