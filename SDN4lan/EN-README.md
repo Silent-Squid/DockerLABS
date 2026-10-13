@@ -24,6 +24,9 @@ The router interfaces names will be ALANX where x is the LAN number
 
 # IPTABLES
 
-Some importants details of my iptables desitions I must speak about are: 
+Some importants details of my iptables decisions I must discuss are: 
 
-Why the iptables's script is not inside the container. The reason, docker behaves inconsistently  with iptables scripts and network scripts. Watching this behaving, I decided to 
+Why the iptables script is not inside the container. The reason, docker behaves inconsistently  with iptables scripts and network scripts. Watching this strange behave, I decisided to do the scripting outside the container. 
+
+
+
