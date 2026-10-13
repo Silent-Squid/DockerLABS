@@ -26,7 +26,12 @@ The router interfaces names will be ALANX where x is the LAN number
 
 Some importants details of my iptables decisions I must discuss are: 
 
-Why the iptables script is not inside the container. The reason, docker behaves inconsistently  with iptables scripts and network scripts. Watching this strange behave, I decisided to do the scripting outside the container. 
+Why the iptables script is not inside the container. The reason, docker behaves inconsistently  with iptables scripts and network scripts. Watching this strange behave, I decisided to do the scripting outside the container. In the script i made the Ciptables funtion for not writting `docker exec alpine-router` every time
 
+Another detail that I should disguss it is about being so specific in the iptables rules. The reason is the prevention of network vulnerabilities. Being so specific in the rules makes an attacant who conect to LAN1 and uses an IP from LAN2 inable of having a comunication with any device in LAN2. Only packets with an interface input ALAN4 can have comunications with a LAN2
 
+Example: 
 
+```
+iptables -A FORWARD -s 10.10.10.0/24 -i ALAN1 -o ALAN3 -d 30.10.10.0/24 -j ACCEPT
+```
