@@ -3,7 +3,7 @@ This is a repo for storing and sharing my SDN, openVswitch topologys and laborat
 
 Every Lab have a Spanish and Hand-Made traslation to english documentation. 
 
-I would like to get recomendations and chalenges via discord
+I would like to get recomendations and chalenges via discord (it's on my GitHub Profile)
 
 I hope you like it  <3
 
