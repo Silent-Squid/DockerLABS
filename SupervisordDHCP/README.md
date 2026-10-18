@@ -13,6 +13,15 @@ que, utilizando máquinas virtuales, requerirían ordenadores de la NASA.
 
 Si se implementa un servidor multiservicio, siempre que no sea extrictamente necesario, no correremos más de un servicio por contenedor. 
 
+## ¿Por que utilizar isc-dhcp-server?
+
+En los ciclos formativos de informática de grado medio y grado superior en España, `isc-dhcp-server` es un estándar en servicios de DHCP. Muchos servidores relativamente antiguos (2-3 años o más de antigüedad) siguen utilizando este servicio. 
+**está completamente desactualizado** y ya no tiene actualizaciones de sus creadores. `Kea` es el nuevo servicio de DHCP estándar creado por `ISC` con una estructura de ficheros de configuración simplemente, increíble. Proximamente haré un laboratorio con este servicio. 
+
+
+# Topología
+
+
 <img width="466" height="606" alt="image" src="https://github.com/user-attachments/assets/51fea801-671c-4f89-a5e2-7d49a48549f4" />
 
 Como puedes ver, la topología es mucho más sencilla que la anterior 
@@ -22,5 +31,9 @@ Como puedes ver, la topología es mucho más sencilla que la anterior
 El dispositivo `alpine-router` tendrá una interfaz de red NAT generada por docker y otra llamada LAN1I para la red LAN1. 
 
 El dispositivo `LAN1` es un switch L2 de openVswitch.
+
+Los clientes `alpineX` son simples y solo tendrán instalado `isc-dhcp-client`
+
+La red es `10.10.10.0/24` con gateway `10.10.10.1/24` con un rango de DHCP de `10.10.10.10-40/24`
 
 
