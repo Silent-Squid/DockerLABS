@@ -1,6 +1,6 @@
 # Objetivos
 
-El objetivo del laboratorio es, crear una topología simple con `supervisord` para gestionar los servicios y `isc-dhcp-server` para entregar a una red L2 acceso a la red LAN1 y a internet mediante `iptables`.  
+El objetivo del laboratorio es, crear una topología simple con `supervisord` para gestionar los servicios y `kea` para entregar a una red L2 acceso a la red LAN1 y a internet mediante `iptables`.  
 
 ## ¿Por qué utilizar supervisord?
 
@@ -13,11 +13,12 @@ que, utilizando máquinas virtuales, requerirían ordenadores de la NASA.
 
 Si se implementa un servidor multiservicio, siempre que no sea extrictamente necesario, no correremos más de un servicio por contenedor. 
 
-## ¿Por que utilizar isc-dhcp-server?
+## ¿Por que utilizar kea?
 
 En los ciclos formativos de informática de grado medio y grado superior en España, `isc-dhcp-server` es un estándar en servicios de DHCP. Muchos servidores relativamente antiguos (2-3 años o más de antigüedad) siguen utilizando este servicio. 
-**está completamente desactualizado** y ya no tiene actualizaciones de sus creadores. `Kea` es el nuevo servicio de DHCP estándar creado por `ISC` con una estructura de ficheros de configuración simplemente, increíble. Proximamente haré un laboratorio con este servicio. 
+**está completamente desactualizado** y está completamente muerto desde el 2022.
 
+`Kea` es el nuevo servicio de DHCP estándar creado por `ISC` con una estructura de ficheros de configuración simplemente, increíble. 
 
 # Topología
 
