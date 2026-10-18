@@ -32,8 +32,7 @@ El dispositivo `alpine-router` tendrá una interfaz de red NAT generada por dock
 
 El dispositivo `LAN1` es un switch L2 de openVswitch.
 
-Los clientes `alpineX` son simples y solo tendrán instalado `isc-dhcp-client`
-
+Los clientes `alpineX` son simples con bussybox y el cliente de dhcp `udhcpc`
 La red es `10.10.10.0/24` con gateway `10.10.10.1/24` con un rango de DHCP de `10.10.10.10-40/24`
 
 
