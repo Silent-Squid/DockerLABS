@@ -1,2 +1,3 @@
-# [README-ES.md](SPANISH README)
-# [README-EN.md](ENGLISH README)
+# [Lee en español](README-ES.md)
+
+# [Read in english](README-EN.md)
