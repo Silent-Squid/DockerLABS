@@ -41,10 +41,16 @@ El cliente `alpine3` tendrá la ip 10.10.10.50
 
 # Requisitos
 
+- OpenvSwitch ovs-docker y docker instalados
+- Conexión a internet
+- Usuario con permisos de docker y OpenVSwitch
 
 
 # Cómo replicar
 
-1. Exec run.sh con bash
-2. Exec kill.sh para eliminar toda la topología
+1. ejecuta run.sh con bash
+2. ejecuta kill.sh para eliminar toda la topología
+
+- Puedes acceder a supervisord con la ip del contenedor y el puerto 10000
+- El dhcp se activa automáticamente
 
