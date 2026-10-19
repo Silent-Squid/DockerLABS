@@ -52,5 +52,5 @@ El cliente `alpine3` tendrá la ip 10.10.10.50
 2. ejecuta kill.sh para eliminar toda la topología
 
 - Puedes acceder a supervisord con la ip del contenedor y el puerto 10000
-- El dhcp se activa automáticamente
+- El DHCP se activa automáticamente
 
