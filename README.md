@@ -9,4 +9,4 @@ I hope you like it  <3
 
 # Index
 - `SDN4lan`: It's a complex topology of 4 LAN with a router made with iptables. Some have internet, some no and some have conection between each others
-- `SupervisordDHCP`: It's a simple topology with 1 LAN with a DHCP router made with Kea and some iptables. 
+- `SupervisordDHCP`: It's a simple topology of 1 LAN with a DHCP router made with Kea and some iptables. 
