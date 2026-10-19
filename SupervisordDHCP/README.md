@@ -23,7 +23,8 @@ En los ciclos formativos de informática de grado medio y grado superior en Espa
 # Topología
 
 
-<img width="466" height="606" alt="image" src="https://github.com/user-attachments/assets/51fea801-671c-4f89-a5e2-7d49a48549f4" />
+<img width="703" height="740" alt="image" src="https://github.com/user-attachments/assets/7a2fbb29-8f0b-4b09-837e-71f7cdd1a4f3" />
+
 
 Como puedes ver, la topología es mucho más sencilla que la anterior 
 
@@ -34,6 +35,8 @@ El dispositivo `alpine-router` tendrá una interfaz de red NAT generada por dock
 El dispositivo `LAN1` es un switch L2 de openVswitch.
 
 Los clientes `alpineX` son simples con bussybox y el cliente de dhcp `udhcpc`
-La red es `10.10.10.0/24` con gateway `10.10.10.1/24` con un rango de DHCP de `10.10.10.10-40/24`
+La red es `10.10.10.0/24` con gateway `10.10.10.1/24` con un rango de DHCP de `10.10.10.10-10.10.10.40/24`
+
+El cliente `alpine3` tendrá la ip 10.10.10.50
 
 
