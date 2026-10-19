@@ -39,4 +39,12 @@ La red es `10.10.10.0/24` con gateway `10.10.10.1/24` con un rango de DHCP de `1
 
 El cliente `alpine3` tendrá la ip 10.10.10.50
 
+# Requisitos
+
+
+
+# Cómo replicar
+
+1. Exec run.sh con bash
+2. Exec kill.sh para eliminar toda la topología
 
