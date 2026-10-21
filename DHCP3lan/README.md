@@ -11,6 +11,6 @@ Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via 
 
 ## Enrutamiento de iptables
 
-- LAN1 No tendrá ninguna comunicación
+- LAN1 Tendrá comunicación con LAN2 e INTERNET
 - LAN2 No tendrá ninguna comunicación
 - LAN3 No tendrá ninguna comunicación
