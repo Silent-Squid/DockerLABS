@@ -22,6 +22,8 @@ Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via 
 
 ## Enrutamiento de iptables
 
+- Se deberá poder acceder a SUPERVISORD web desde cualquier sitio (Es inseguro para producción, pero para estos laboratorios nos sirve)
+  
 - LAN1 Tendrá comunicación con LAN2 e INTERNET
 - LAN2 No tendrá ninguna comunicación
 - LAN3 No tendrá ninguna comunicación
