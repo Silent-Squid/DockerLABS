@@ -58,14 +58,23 @@ Aun que todos las rutas por defecto sean .1, deberán ser especificadas en el DH
 
 # Requisitos 
 
+- Tener docker, OpenVSwitch y ovs-docker instalados y con permisos de administración
+- No tener ningun contenedor llamado LANXAlpineX donde x es un rango entre 1 y 5
+- No tener ningún switch virtual llamado LAN1 LAN2 LAN3
+  
+
+
 # Como replicar
 
+- Ejecuta run.sh para lanzar la topología
+- Listo, ya la tienes corriendo!!
+- Utiliza destroy.sh para eliminarla completamente
 
-
-
-
+Recuerda correr el laboratorio en una máquina virtual
+El supervisord es accesible via IP del contenedor de docker DHCP-SRV y el puerto 10000
 
 
 ---
 
 Tenemos muchas ip diferentes y muchos clientes... ¿Por qué no usar un DNS...? (pista al prox lab >;^)
+бинд9... :}
