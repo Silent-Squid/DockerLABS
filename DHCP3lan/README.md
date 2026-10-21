@@ -2,8 +2,7 @@
 
 El objetivo de este laboratorio es aplicar los aprendizajes de `IPTABLES`, `SUPERVISORD` y `KEA-DHCP4` en un laboratorio complejo.
 
-Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via DHCP. Para saber que todo funciona correctamente. Con solo iptables, a no ser que usemos VLANs o un sistema restrictivo de asignación de IPs, es imposbile bloquear el DHCP en las reglas, ya que es un protocolo que trabaja en L2 del modelo TCP/IP de 5 niveles.
-
+Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via DHCP. Para saber que todo funciona correctamente. 
 
 ## Topología
 
