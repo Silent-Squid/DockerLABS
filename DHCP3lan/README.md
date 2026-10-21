@@ -11,19 +11,29 @@ Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via 
 
 ## DHCP
 
+Rangos de IP caóticos, para llevar al límite la configuración básica. 
+
 - LAN1:
     - El primer cliente del DHCP obtendrá la ip 10.0.0.10
     - El segundo cliente del DHCP obtendrá la ip 10.0.0.20
     - A partir del clienente 3, el rango de ip será entre 10.0.0.50-10.0.0.150
     - Un cliente (en este caso alpine4) tendrá la MAC AA:AA:AA:AA:10:14. Tendrá la ip 10.0.0.204
     - Un cliente (en este caso alpine5) tendrá la MAC AA:AA:AA:AA:10:15. Tendrá la ip 10.0.0.205
- 
+
+- LAN2:
+   - El rango es entre la 20.0.0.15 y 20.0.0.30
+
+- LAN3
+    - El rango es 30.0.0.124-30.0.0.150 
 
 
 ## Enrutamiento de iptables
 
-- Se deberá poder acceder a SUPERVISORD web desde cualquier sitio (Es inseguro para producción, pero para estos laboratorios nos sirve)
+- Se deberá poder acceder a SUPERVISORD web desde cualquier sitio (Es inseguro para entornos de producción, pero para estos laboratorios nos sirve)
+- Las políticas por defecto deben ser DROP
+- Todas las políticas deben ser muy específicas
+- Todas las comunicaciones ya establecidad o relacionadas deben funcionar correctamente
   
 - LAN1 Tendrá comunicación con LAN2 e INTERNET
-- LAN2 No tendrá ninguna comunicación
-- LAN3 No tendrá ninguna comunicación
+- LAN2 Tendrá comunicacion con LAN3
+- LAN3 Tendrá comunicación con LAN1 y LAN2 e INTERNET
