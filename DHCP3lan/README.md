@@ -54,3 +54,18 @@ Aun que todos las rutas por defecto sean .1, deberán ser especificadas en el DH
 - LAN1 Tendrá comunicación con LAN2 e INTERNET
 - LAN2 Tendrá comunicacion con LAN3
 - LAN3 Tendrá comunicación con LAN1 y LAN2 e INTERNET
+
+
+# Requisitos 
+
+# Como replicar
+
+
+
+
+
+
+
+---
+
+Tenemos muchas ip diferentes y muchos clientes... ¿Por qué no usar un DNS...? (pista al prox lab >;^)
