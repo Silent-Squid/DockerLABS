@@ -9,6 +9,16 @@ Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via 
 
 <img width="960" height="720" alt="Topología compleja KEA" src="https://github.com/user-attachments/assets/de0d3f56-45d3-424e-aa55-bce80a006fff" />
 
+## Interfaces del servidor
+
+Las interfaces del router serán 
+
+- ilan1 10.0.0.1
+- ilan2 20.0.0.1
+- ilan3 30.0.0.1
+- eth0 docker bridge network con conexión a internet
+
+
 ## DHCP
 
 Rangos de IP caóticos, para llevar al límite la configuración básica. 
@@ -25,6 +35,8 @@ Rangos de IP caóticos, para llevar al límite la configuración básica.
 
 - LAN3
     - El rango es 30.0.0.124-30.0.0.150 
+
+Aun que todos las rutas por defecto sean .1, deberán ser especificadas en el DHCP.
 
 
 ## Enrutamiento de iptables
