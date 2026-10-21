@@ -3,6 +3,8 @@ This is a repo for storing and sharing my SDN, openVswitch topologies and labora
 
 Every Lab have a Spanish and Hand-Made traslation to english documentation. 
 
+Every Lab is planned and developed by me.
+
 I would like to get recomendations and chalenges via discord (it's on my GitHub Profile)
 
 I hope you like it  <3
