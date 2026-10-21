@@ -9,6 +9,17 @@ Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via 
 
 <img width="960" height="720" alt="Topología compleja KEA" src="https://github.com/user-attachments/assets/de0d3f56-45d3-424e-aa55-bce80a006fff" />
 
+## DHCP
+
+- LAN1:
+    - El primer cliente del DHCP obtendrá la ip 10.0.0.10
+    - El segundo cliente del DHCP obtendrá la ip 10.0.0.20
+    - A partir del clienente 3, el rango de ip será entre 10.0.0.50-10.0.0.150
+    - Un cliente (en este caso alpine4) tendrá la MAC AA:AA:AA:AA:10:14. Tendrá la ip 10.0.0.204
+    - Un cliente (en este caso alpine5) tendrá la MAC AA:AA:AA:AA:10:15. Tendrá la ip 10.0.0.205
+ 
+
+
 ## Enrutamiento de iptables
 
 - LAN1 Tendrá comunicación con LAN2 e INTERNET
