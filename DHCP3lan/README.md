@@ -8,22 +8,7 @@ Las reglas del firewall se aplicarán antes de que los clientes obtengan IP via 
 
 ¿Por qué el DHCP no se bloquea con la política por defecto drop?
 
-Su modo de funcionamiento es muy curioso. 
-
-Hay que recordar que nosotros utilizamos conntrack ESTABLISHED, RELATED. Con esto todas las comunicaciones que estén establecidas o estén relacionadas con otra comunicaicón pasada funcionarán sin problema.
-
-Siguiendo esta lógica, por qué no se cae el DHCP??
-
-Puesto a que es una comunicación iniciada por el sistema
-
-El cliente manda un broadcast de DISCOVER 
-
-El servidor INICIA la comunicación al descubrir el DISCOVER, por el puerto 67. Como la comunicación ha sido empezada por el servidor y ya está establecida, aunque bloqueemos todo el trafico menos el especificado en conntrack el DHCP funcionará. 
-
-Para bloquear el DHCP habría que usar VLANs o un Firewall de capa2.
-
-Otra cosa que puede pasar (según he estado leyendo, no confirmo ni desmiento) es que, a nivel de sistema operativo, el DHCP puede funcionar fuera del firewall. (por eso también son importante los firewall físicos con multiservicio :D)
-
+Porque no es tráfico de L3/4, en el que trabaja iptables. Es tráfico de L2 (enlace de datos). Necesitaremos un firewall de capa 2 para filtrar este tráfico, o ser más específicos con la configuración de kea (kea es extremadamente potente)
 
 ## Topología
 
